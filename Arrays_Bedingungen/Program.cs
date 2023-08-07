@@ -4,66 +4,89 @@
     {
         static void Main(string[] args)
         {
-            int[] zahlen = { 2, 4, 78, -123, -8, 0, 11111 };
+            #region Arrays
 
+            //ARRAYS
+            ///Arrays sind Collections, welche mehrere Variablen eines Datentyps speichern können. Die Größe des Arrays muss bei der
+            ///Initialisierung entweder durch eine Zahl oder durch eine bestimmte Anzahl von spezifischen Elementen definiert werden.
+            int[] zahlen = { 2, 4, 78, -123, -8, 0, 11111 };
+            //Der Zugiff auf einzelne Array-Positionen erfolgt durch einen Nullbasierten Index
             Console.WriteLine(zahlen[2]);
             zahlen[2] = 1234;
             Console.WriteLine(zahlen[2]);
 
-
+            //Array-Deklaration ohne direkte Initialisierung der Positionen (Größe muss angegeben werden)
             string[] worte = new string[5];
 
+            //Neuzuweisung eines neuen Arrays zu einer existierenden Arrayvariablen 
+            zahlen = new int[] { 2, 4 };
 
-            zahlen = new int[]{ 1,2,3};
-            zahlen[1] = 12;
+            //Verwendung der Contains-Funktion eines Arrays (überprüft auf das Vorhandensein eines Elements)
+            Console.WriteLine(zahlen.Contains(-123));
+            Console.WriteLine(zahlen.Contains(555));
 
-            Console.WriteLine(zahlen.Contains(12));
-            Console.WriteLine(zahlen.Contains(-34));
+            //Ausgabe der Länge (Anzahl der Elemente) des Arrays
+            Console.WriteLine(zahlen.Length);
 
-
+            //String als Char-Array
             string beispiel = "Hallo";
             Console.WriteLine(beispiel[2]);
 
+            //Mehrdimensionales Array
+            int[,] zweiDimArray = new int[3, 5];
+            zweiDimArray[0, 0] = 1;
 
-            int a = int.Parse(Console.ReadLine());
-            int b = 24;
-
-            if(a == 20)
+            for (int i = 0; i < 3; i++)
             {
-                Console.WriteLine("A ist gleich 20");
-
-                int nochNeZahl = 45;
+                for (int j = 0; j < 5; j++)
+                {
+                    zweiDimArray[i, j] = i * j;
+                }
             }
-            else if(a < b)
+            Console.WriteLine(zweiDimArray[2, 3]);
+            #endregion
+
+            #region Bedingungen (If/Else)
+
+            //Deklaration und Initialisierung von Beispiel-Variablen
+            int a = 23;
+            int b = 23;
+
+            //BEDINGUNGEN (IF) prüfen logische Aussagen (z.B. Vergleiche oder Funktionen mit bool-Rückgabe) und führen den folgenden Block bei einem TRUE aus
+            if (a == 20)
+            {
+                Console.WriteLine("A ist 20");
+            }
+
+            //IF-ELSEIF-ELSE-Block
+            ///Das Programm wird den ersten Block ausführen, bei welchem er auf eine wahre Bedingung trifft und dann am Ende des Blocks mit
+            ///dem Code weiter machen
+            if (a < b)
             {
                 Console.WriteLine("A ist kleiner als B");
             }
-            else if(a > b)
+            //Es kann beliebig viele ELSE-IF-Blöcke geben
+            else if (a > b)
             {
                 Console.WriteLine("A ist größer als B");
             }
+            //Wenn keine der Bedingungen wahr ist, wird der (optionale) ELSE-Block ausgeführt
             else
                 Console.WriteLine("A ist gleich B");
 
-            Console.WriteLine("Ende des IF-Blocks");
-
-
+            //Kurznotation:
+            //(Bedingung) ? TrueAusgabe : FalseAusgabe
             string ergebnis = (a == b) ? "A ist gleich B" : "A ist ungleich B";
 
-
-            if (zahlen.Contains(12))
-                Console.WriteLine("ZAHLEN enthält 12");
-
+            //Bsp eines String-Vergleichs
             string name1 = "Hans";
-            string name2 = "Stefan";
+            string name2 = "Hans";
 
-            if (!name1.Equals(name2))
-                Console.WriteLine("Namen sind ungleich");
-            else
-            { 
-                Console.WriteLine("Namen sind gleich"); 
+            if (name1.Equals(name2))
+            {
+                Console.WriteLine("Gleich");
             }
-
+            #endregion
 
         }
     }
