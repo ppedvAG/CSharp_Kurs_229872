@@ -10,13 +10,19 @@
 
             //Abfrage der Eingaben
             Console.WriteLine("Bitte gib folgende Angaben ein:");
+
             Console.Write("Entfernung (in Metern): ");
             //Parsen der Eingabe in Int32
-            entfernungInMetern = int.Parse(Console.ReadLine());
+            string eingabe = Console.ReadLine();
+            entfernungInMetern = int.Parse(eingabe);
+
             Console.Write("Stunden: ");
-            stunden = int.Parse(Console.ReadLine());
+            eingabe = Console.ReadLine();
+            stunden = int.Parse(eingabe);
+
             Console.Write("Minuten: ");
             minuten = int.Parse(Console.ReadLine());
+
             Console.Write("Sekunden: ");
             sekunden = int.Parse(Console.ReadLine());
 
