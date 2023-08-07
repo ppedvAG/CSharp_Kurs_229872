@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02_Geschwindigkeitsrechn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M03_Arrays_Bedingungen", "Arrays_Bedingungen\M03_Arrays_Bedingungen.csproj", "{00BB7190-0E65-489E-B8E7-B579F7863DA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schaltjahrrechner_MiniLotto", "Schaltjahrrechner_MiniLotto\Schaltjahrrechner_MiniLotto.csproj", "{FA9D79BC-F10D-41B7-A72D-A5DFA5590660}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03_Schaltjahrrechner_MiniLotto", "Schaltjahrrechner_MiniLotto\Lab03_Schaltjahrrechner_MiniLotto.csproj", "{FA9D79BC-F10D-41B7-A72D-A5DFA5590660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
