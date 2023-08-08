@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M04_Schleifen_Enums", "Schl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab04_Taschenrechner", "Taschenrechner\Lab04_Taschenrechner.csproj", "{1E0B3F7A-E5C5-4FB4-B962-1A6E303E21FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funktionen", "Funktionen\Funktionen.csproj", "{00CEA36F-995F-4245-BEF6-832008B45088}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M05_Funktionen", "Funktionen\M05_Funktionen.csproj", "{00CEA36F-995F-4245-BEF6-832008B45088}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
