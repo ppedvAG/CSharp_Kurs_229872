@@ -61,6 +61,9 @@
             Mensch nachwuchs = (Mensch)mensch.ProduziereNachwuchs("Jürgen");
             Console.WriteLine(nachwuchs.Vorname);
 
+            Console.WriteLine(lebewesen);
+            Console.WriteLine(mensch);
+
         }
     }
 }

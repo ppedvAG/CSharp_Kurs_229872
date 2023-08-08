@@ -17,5 +17,15 @@ namespace M06f_OOP
             this.Vorname = vorname;
             this.TrägtBrille = brille;
         }
+
+        public override Lebewesen ProduziereNachwuchs(string kindname)
+        {
+            return new Mensch(kindname, this.Name, "Muttermilch", DateTime.Now, 30, false);
+        }
+
+        public override string ToString()
+        {
+            return $"Der Mensch {this.Vorname} " + base.ToString() + $" Er trägt " + ((this.TrägtBrille) ? "eine" : "keine") + " Brille";
+        }
     }
 }

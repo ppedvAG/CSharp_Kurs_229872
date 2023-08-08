@@ -107,5 +107,11 @@ namespace M06f_OOP
 
         #endregion
 
+
+        public override string ToString()
+        {
+            return $"{this.Name} ist {this.Alter} Jahre alt und mag gerne {this.Lieblingsnahrung}.";
+        }
+
     }
 }
