@@ -19,9 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M05_Funktionen", "Funktione
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05_Taschenrechner02", "Taschenrechner02\Lab05_Taschenrechner02.csproj", "{372BFF54-35C4-473E-B224-8AF9F58DF256}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fahrzeugpark", "Fahrzeugpark\Fahrzeugpark.csproj", "{17657AF0-F9C0-403B-B653-02B70EC37ADD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06f_Fahrzeugpark", "Fahrzeugpark\Lab06f_Fahrzeugpark.csproj", "{17657AF0-F9C0-403B-B653-02B70EC37ADD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{DD66ACF0-9D3B-44F6-8E33-5AF4CC4F8B13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M06f_OOP", "OOP\M06f_OOP.csproj", "{DD66ACF0-9D3B-44F6-8E33-5AF4CC4F8B13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

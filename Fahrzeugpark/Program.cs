@@ -1,20 +1,35 @@
-﻿namespace Fahrzeugpark
+﻿using Fahrzeugpark;
+
+namespace Beispiel
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Fahrzeug fahrzeug1 = new Fahrzeug("BMW", 250);
-            Fahrzeug fahrzeug2 = new Fahrzeug("Audi", 230);
+            //Ändern des durch Console verwendeten Zeichensatzes auf Unicode (damit das €-Zeichen angezeigt werden kann)
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
 
-            Console.WriteLine($"Fahrzeug1 heißt {fahrzeug1.Name}.");
-            Console.WriteLine(fahrzeug1.MaxGeschwindigkeit);
-            fahrzeug1.MaxGeschwindigkeit = 300;
-            Console.WriteLine(fahrzeug1.MaxGeschwindigkeit);
+            #region Lab 06: Fahrzeug-Klasse
+            //Deklaration einer Fahrzeug-Variablen und Initialisierung mittels einer Fahrzeug-Instanz
+            Fahrzeug fz1 = new Fahrzeug("Mercedes", 190, 23000);
+            //Ausführen der Info()-Methode des Fahrzeugs und Ausgabe in der Konsole
+            Console.WriteLine(fz1.Info() + "\n");
 
-            Console.WriteLine(fahrzeug1.Info());
-            Console.WriteLine(fahrzeug2.Info());
+            //Diverse Methodenausführungen
+            fz1.StarteMotor();
+            fz1.Beschleunige(120);
+            Console.WriteLine(fz1.Info() + "\n");
 
+            fz1.Beschleunige(300);
+            Console.WriteLine(fz1.Info() + "\n");
+
+            fz1.StoppeMotor();
+            Console.WriteLine(fz1.Info() + "\n");
+
+            fz1.Beschleunige(-500);
+            fz1.StoppeMotor();
+            Console.WriteLine(fz1.Info() + "\n");
+            #endregion
         }
     }
 }
