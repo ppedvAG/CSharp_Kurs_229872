@@ -27,8 +27,8 @@ namespace Fahrzeugpark
             this.MotorLäuft = false;
         }
 
-        //Methode zur Ausgabe von Objektinformationen
-        public string Info()
+        //Methode zur Ausgabe von Objektinformationen | virtual erlaubt das Überschreiben durch erbende Klassen
+        public virtual string Info()
         {
             if (this.MotorLäuft)
                 return $"{this.Name} kostet {this.Preis}€ und fährt momentan mit {this.AktGeschwindigkeit} von maximal {this.MaxGeschwindigkeit}km/h.";
