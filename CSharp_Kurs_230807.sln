@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M02_HalloWelt", "HalloWelt\M02_HalloWelt.csproj", "{44569F40-10FA-407B-846F-D7FB06EF491E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M02_HalloWelt", "HalloWelt\M02_HalloWelt.csproj", "{44569F40-10FA-407B-846F-D7FB06EF491E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02_Geschwindigkeitsrechner", "Geschwindigkeitsrechner\Lab02_Geschwindigkeitsrechner.csproj", "{8A29BE14-267C-4F62-923A-55850935D784}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab02_Geschwindigkeitsrechner", "Geschwindigkeitsrechner\Lab02_Geschwindigkeitsrechner.csproj", "{8A29BE14-267C-4F62-923A-55850935D784}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M03_Arrays_Bedingungen", "Arrays_Bedingungen\M03_Arrays_Bedingungen.csproj", "{00BB7190-0E65-489E-B8E7-B579F7863DA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M03_Arrays_Bedingungen", "Arrays_Bedingungen\M03_Arrays_Bedingungen.csproj", "{00BB7190-0E65-489E-B8E7-B579F7863DA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03_Schaltjahrrechner_MiniLotto", "Schaltjahrrechner_MiniLotto\Lab03_Schaltjahrrechner_MiniLotto.csproj", "{FA9D79BC-F10D-41B7-A72D-A5DFA5590660}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab03_Schaltjahrrechner_MiniLotto", "Schaltjahrrechner_MiniLotto\Lab03_Schaltjahrrechner_MiniLotto.csproj", "{FA9D79BC-F10D-41B7-A72D-A5DFA5590660}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M04_Schleifen_Enums", "Schleifen_Enums\M04_Schleifen_Enums.csproj", "{FBCE1E12-7EE9-40D5-8F4B-C1A06CE8798A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M04_Schleifen_Enums", "Schleifen_Enums\M04_Schleifen_Enums.csproj", "{FBCE1E12-7EE9-40D5-8F4B-C1A06CE8798A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04_Taschenrechner", "Taschenrechner\Lab04_Taschenrechner.csproj", "{1E0B3F7A-E5C5-4FB4-B962-1A6E303E21FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab04_Taschenrechner", "Taschenrechner\Lab04_Taschenrechner.csproj", "{1E0B3F7A-E5C5-4FB4-B962-1A6E303E21FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funktionen", "Funktionen\Funktionen.csproj", "{00CEA36F-995F-4245-BEF6-832008B45088}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{1E0B3F7A-E5C5-4FB4-B962-1A6E303E21FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E0B3F7A-E5C5-4FB4-B962-1A6E303E21FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E0B3F7A-E5C5-4FB4-B962-1A6E303E21FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00CEA36F-995F-4245-BEF6-832008B45088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CEA36F-995F-4245-BEF6-832008B45088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CEA36F-995F-4245-BEF6-832008B45088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CEA36F-995F-4245-BEF6-832008B45088}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
