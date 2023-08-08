@@ -79,5 +79,24 @@ namespace Fahrzeugpark
         }
 
         #endregion
+
+        #region Lab 07: Statische Member, Destruktor
+        //Der optionale DESTRUCTOR wird von der GaebageCollection bei Zerstörung (Speicherferigabe) des Objekts aufgerufen.
+        ~Fahrzeug()
+        {
+            Console.WriteLine($"{this.Name} ist verschrottet worden.");
+        }
+
+
+        //STATIC markiert statische Member. D.h. diese gelten für die Gesamtheit aller Objekte dieser Art und werden nicht für
+        //jedes Objekt einzeln erstellt.
+        public static int AnzahlAllerFahrzeuge { get; private set; } = 0;
+
+        public static string BeschreibeAnzahlAllerFahrzeuge()
+        {
+            return $"Es wurden bist jetzt {AnzahlAllerFahrzeuge} Fahrzeuge produziert.";
+        }
+
+        #endregion
     }
 }

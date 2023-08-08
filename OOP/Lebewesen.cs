@@ -53,6 +53,8 @@ namespace OOP
             this.Lieblingsnahrung = lieblingsnahrung;
             this.Geburtsdatum = geburtstag;
             this.Größe = größe;
+
+            Lebewesen.AnzahlAllerLebewesen++;
         }
 
         //Es können mehrere Konstruktoren definiert werden, welche unterschiedliche Übergabeparameter haben (Überladung). Ein Konstruktor, der keine
@@ -74,6 +76,33 @@ namespace OOP
         public Lebewesen ProduziereNachwuchs(string kindname)
         {
             return new Lebewesen(kindname, "Babynahrung", DateTime.Now, 30);
+        }
+
+        #endregion
+
+
+        #region Statische Member
+
+        //STATISCHE Variablen und Methoden hängen an der Klasse selbst und nicht an instanziierten Objekten. Sie existieren demnach unabhängig von der Anzahl
+        ///der Objekte genau einmal. Der Aufruf erfolgt über den Klassenbezeichner.
+        public static int AnzahlAllerLebewesen { get; set; } = 0;
+
+        public static void ZeigeAnzahlAllerLebewesen()
+        {
+            Console.WriteLine($"Es gibt {AnzahlAllerLebewesen} Lebewesen.");
+        }
+
+        #endregion
+
+        #region Destruktor
+
+        //Der DESTRUKTOR wird von der GarbageCollection aufgerufen, wenn das Objekt nicht
+        //mehr referenziert ist. Hier können Aktionen definiert werden,
+        //welche zusätzlich zur 'Zerstörung' erfolgen sollen.
+        ~Lebewesen()
+        {
+            Console.WriteLine($"{this.Name} ist gestorben.");
+            AnzahlAllerLebewesen--;
         }
 
         #endregion
