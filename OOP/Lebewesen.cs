@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace OOP
+namespace M06f_OOP
 {
     //KLASSEN sind Vorlagen für Objekte. Sie bestimmen Eigenschaften und Funktionen dieser.
     public class Lebewesen //zur Verwendung vgl. Program.cs
@@ -73,7 +73,7 @@ namespace OOP
             this.Größe++;
         }
 
-        public Lebewesen ProduziereNachwuchs(string kindname)
+        public virtual Lebewesen ProduziereNachwuchs(string kindname)
         {
             return new Lebewesen(kindname, "Babynahrung", DateTime.Now, 30);
         }

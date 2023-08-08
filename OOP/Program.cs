@@ -1,4 +1,4 @@
-﻿namespace OOP
+﻿namespace M06f_OOP
 {
     class Program
     {
@@ -27,28 +27,39 @@
             //Lebewesen kind = lebewesen1.ProduziereNachwuchs("Maria");
             #endregion
 
-
             #region Modul 07: Statische Member und GC
 
-            //Variablendklaration
-            Lebewesen lebewesen;
+            ////Variablendklaration
+            //Lebewesen lebewesen;
 
-            //Schleife zur neubelegung der Variablen (um die GarbageCOllection zu demonstrieren)
-            for (int i = 0; i < 10; i++)
-            {
-                //Neuzuweisung der Varablen (alte Objekte werden derefernziert -> Destruktor wird ausgeführt)
-                lebewesen = new Lebewesen($"Lebewesen Nr. {i}", String.Empty, new DateTime(), 0);
-            }
+            ////Schleife zur neubelegung der Variablen (um die GarbageCOllection zu demonstrieren)
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    //Neuzuweisung der Varablen (alte Objekte werden derefernziert -> Destruktor wird ausgeführt)
+            //    lebewesen = new Lebewesen($"Lebewesen Nr. {i}", String.Empty, new DateTime(), 0);
+            //}
 
-            //Manueller Aufruf der GC und Programmpause, bis alle Destruktoren beendet wurden
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
+            ////Manueller Aufruf der GC und Programmpause, bis alle Destruktoren beendet wurden
+            //GC.Collect();
+            //GC.WaitForPendingFinalizers();
 
-            //Aufruf eines statischen Members der Person-Klasse
-            Console.WriteLine(Lebewesen.AnzahlAllerLebewesen);
-            Lebewesen.ZeigeAnzahlAllerLebewesen();
+            ////Aufruf eines statischen Members der Person-Klasse
+            //Console.WriteLine(Lebewesen.AnzahlAllerLebewesen);
+            //Lebewesen.ZeigeAnzahlAllerLebewesen();
 
             #endregion
+
+            Lebewesen lebewesen = new Lebewesen("Bello", "Knochen", new DateTime(2022, 1, 5), 70);
+
+            Mensch mensch = new Mensch("Anna", "Nass", "Pizza", new DateTime(2002, 3, 4), 190, true);
+
+            Console.WriteLine(mensch.Alter);
+            Console.WriteLine(mensch.Vorname);
+
+            Console.WriteLine(lebewesen.Größe);
+
+            Mensch nachwuchs = (Mensch)mensch.ProduziereNachwuchs("Jürgen");
+            Console.WriteLine(nachwuchs.Vorname);
 
         }
     }
