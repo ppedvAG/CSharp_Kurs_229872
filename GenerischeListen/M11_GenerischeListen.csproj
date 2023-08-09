@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Fahrzeugpark\Lab06f_Fahrzeugpark.csproj" />
+    <ProjectReference Include="..\OOP\M06f_OOP.csproj" />
   </ItemGroup>
 
 </Project>
