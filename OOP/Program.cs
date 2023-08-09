@@ -73,32 +73,85 @@
 
             #endregion
 
-            Lebewesen lebewesen;
-            Mensch mensch = new Mensch("Rainer", "Zufall", "Chips", new DateTime(1999, 5, 6), 189, true);
+            #region Modul 09: Polymorphismus
 
-            lebewesen = mensch;
+            ////Deklaration einer Bsp-Variablen
+            //Lebewesen lebewesen;
+            ////Instanziierung eines Objekts der abgeleiteten Klasse
+            //Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6), 189, true);
 
-            Console.WriteLine(mensch.Vorname);
-            Console.WriteLine(lebewesen.Name);
+            ////Zuweisung des abgeleiteten Objekts zu Variable der Mutterklasse
+            //lebewesen = mensch;
 
-            ÄndereLieblingsnahrung(mensch, "Joghurt");
+            ////Aufruf der unten stehenden Methode mit Übergabe eines Menschen in einem Lebewesen-Übergabeparameter
+            //ÄndereLieblingsnahrung(mensch, "Pizza");
 
-            if (lebewesen is Mensch)
-            {
-                Mensch mensch2 = (Mensch)lebewesen;
+            ////Tests des Laufzeittyps (des beinhalteten Objekts)
+            //if (lebewesen.GetType() == typeof(Mensch))
+            //    Console.WriteLine("Lebewesen ist ein Mensch");
 
-                mensch2 = lebewesen as Mensch;
+            //if (lebewesen is Mensch)
+            //    Console.WriteLine("Lebewesen ist ein Mensch");
 
-            }
+            ////überschriebene Methoden werden trotzdem ausgeführt
+            //Console.WriteLine(lebewesen.ToString());
 
-            Console.WriteLine(lebewesen.ToString());
+            //if (lebewesen is Mensch)
+            //{
+            //    //Rückcast des abgeleiteten Objekts aus Mutterklassevariablen in abgeleitete Variable
+            //    Mensch mensch2 = (Mensch)lebewesen;
+            //    //Alternativer Cast
+            //    mensch2 = lebewesen as Mensch;
+            //}
 
-            lebewesen.Essen();
+            ////Aufruf einer überschriebenen Methode durch eine Basisklassenvariable (Funktion des Laufzeittypen wird ausgeführt)
+            //Console.WriteLine(lebewesen.ToString());
+
+            ////Aufruf einer abstrakten Methode
+            //lebewesen.Essen();
+
+            #endregion
+
+            #region Modul 10: Interfaces
+
+            //Instanziierung eines Beispiel-Objekts
+            Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6), 198, true);
+            //Betrachtung des Objekts als Objekt des Interfaces
+            IArbeitend arbeitendesObjekt = mensch;
+            //Zugriff auf Interface-Methode
+            arbeitendesObjekt.Auszahlung();
+            //Übergabe an Methode, welche ein Objekt des Interfaces erwartet
+            Gehaltserhöhung(arbeitendesObjekt);
+            //Übergabe benötigt keinen Cast aus implementierender Klasse
+            Gehaltserhöhung(mensch);
+
+            //Aufruf der Clone()-Funktion des IClonable-Interfaces
+            Mensch kopierterMensch = (Mensch)mensch.Clone();
+            #endregion
         }
 
+        #region Modul 10: Polymorphismus
+        //Bsp-Methode für Übergabe eines Lebewesens (kann auch spezifische, abgeleitete Objekte, z.B. Mensch, empfangen)
         public static void ÄndereLieblingsnahrung(Lebewesen lebewesen, string neueNahrung)
         {
             lebewesen.Lieblingsnahrung = neueNahrung;
         }
+        #endregion
+
+        #region Modul 10: Interfaces
+        //Bsp-Methode, welche ein Objekt vom Typ des Interfaces verlangt
+        public static void Gehaltserhöhung(IArbeitend arbeitendesObjekt)
+        {
+            arbeitendesObjekt.Gehalt += 100;
+
+            //Prüfung des Objekts auf Laufzeittyp
+            if (arbeitendesObjekt is Mensch)
+            {
+                //Cast
+                Mensch mensch = (Mensch)arbeitendesObjekt;
+                mensch.Essen();
+            }
+        }
+        #endregion
     }
 }
