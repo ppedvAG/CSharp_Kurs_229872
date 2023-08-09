@@ -127,12 +127,13 @@ namespace Fahrzeugpark
             Dictionary<Fahrzeug, Fahrzeug> fzDict = new Dictionary<Fahrzeug, Fahrzeug>();
 
             //Deklaration und Initialisierung einer Variablen zur Bestimmung der Anzahl der Durchläufe 
-            int anzahlFahrzeuge = 100000;
+            int anzahlFahrzeuge = 10;
 
             //Schleife zur zufälligen Befüllung von Queue und Stack
             for (int i = 0; i < anzahlFahrzeuge; i++)
             {
-                fzQueue.Enqueue(Fahrzeug.GeneriereFahrzeug($"_Q{i}"));
+                Fahrzeug fz = Fahrzeug.GeneriereFahrzeug($"_Q{i}");
+                fzQueue.Enqueue(fz);
                 fzStack.Push(Fahrzeug.GeneriereFahrzeug($"_S{i}"));
             }
 

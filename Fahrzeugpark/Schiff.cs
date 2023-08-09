@@ -37,7 +37,7 @@ namespace Fahrzeugpark
 
         //Durch IBeladbar verlangte Property
         public Fahrzeug Ladung { get; set; }
-      
+
 
         //Durch IBeladbar verlangte Methoden
         public void Belade(Fahrzeug fz)
@@ -77,7 +77,9 @@ namespace Fahrzeugpark
             else
                 Console.WriteLine($"'{this.Name} hat keine Ladung geladen.");
             //Rückgabe von null, falls kein Fahrzeug geladen ist
-            return null;
+            //return null;
+
+            throw new Exception("Kein Fahrzeug vorhanden");
         }
     }
 }

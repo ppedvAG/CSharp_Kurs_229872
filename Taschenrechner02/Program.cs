@@ -93,7 +93,7 @@ namespace Taschenrechner2
                     symbol = "/";
                     return z1 / z2;
                 default:
-                    return double.NaN;
+                    throw new Exception("Falsche Rechenoperation");
             }
         }
     }
