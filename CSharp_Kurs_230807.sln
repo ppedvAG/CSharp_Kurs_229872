@@ -15,15 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M04_Schleifen_Enums", "Schl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab04_Taschenrechner", "Taschenrechner\Lab04_Taschenrechner.csproj", "{1E0B3F7A-E5C5-4FB4-B962-1A6E303E21FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M05_Funktionen", "Funktionen\M05_Funktionen.csproj", "{00CEA36F-995F-4245-BEF6-832008B45088}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M05_Funktionen", "Funktionen\M05_Funktionen.csproj", "{00CEA36F-995F-4245-BEF6-832008B45088}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05_Taschenrechner02", "Taschenrechner02\Lab05_Taschenrechner02.csproj", "{372BFF54-35C4-473E-B224-8AF9F58DF256}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab05_Taschenrechner02", "Taschenrechner02\Lab05_Taschenrechner02.csproj", "{372BFF54-35C4-473E-B224-8AF9F58DF256}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06f_Fahrzeugpark", "Fahrzeugpark\Lab06f_Fahrzeugpark.csproj", "{17657AF0-F9C0-403B-B653-02B70EC37ADD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab06f_Fahrzeugpark", "Fahrzeugpark\Lab06f_Fahrzeugpark.csproj", "{17657AF0-F9C0-403B-B653-02B70EC37ADD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M06f_OOP", "OOP\M06f_OOP.csproj", "{DD66ACF0-9D3B-44F6-8E33-5AF4CC4F8B13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M06f_OOP", "OOP\M06f_OOP.csproj", "{DD66ACF0-9D3B-44F6-8E33-5AF4CC4F8B13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M07_WertVsReferenz", "WertVsReferenz\M07_WertVsReferenz.csproj", "{2BCE248E-B4BD-4B00-9B9C-1D9D3C878892}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M07_WertVsReferenz", "WertVsReferenz\M07_WertVsReferenz.csproj", "{2BCE248E-B4BD-4B00-9B9C-1D9D3C878892}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

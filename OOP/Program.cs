@@ -51,28 +51,54 @@
 
             #region Modul 08: Vererbung
 
-            //Instanziierung eines Objekts der vererbenden Klasse
-            Lebewesen lebewesen = new Lebewesen("Bello", "Fleisch", new DateTime(2007, 4, 23), 70);
-            //Instanziierung eines Objekts der abgeleiteten Klasse
-            Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6), 189);
-            Mensch mensch2 = (Mensch)mensch.ProduziereNachwuchs("Maria");
-            //Aufruf von Properties und Methoden, welche aus der Mutterklasse stammen
-            Console.WriteLine(mensch.Alter);
-            Console.WriteLine(mensch.Name);
+            ////Instanziierung eines Objekts der vererbenden Klasse
+            //Lebewesen lebewesen = new Lebewesen("Bello", "Fleisch", new DateTime(2007, 4, 23), 70);
+            ////Instanziierung eines Objekts der abgeleiteten Klasse
+            //Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6), 189);
+            //Mensch mensch2 = (Mensch)mensch.ProduziereNachwuchs("Maria");
+            ////Aufruf von Properties und Methoden, welche aus der Mutterklasse stammen
+            //Console.WriteLine(mensch.Alter);
+            //Console.WriteLine(mensch.Name);
 
-            //Aufruf einer Property der abgeleiteten Klasse
-            Console.WriteLine(mensch.Vorname);
+            ////Aufruf einer Property der abgeleiteten Klasse
+            //Console.WriteLine(mensch.Vorname);
 
-            //Ausgabe der (überschriebenen) ToString()-Methoden
-            Console.WriteLine(lebewesen);
-            Console.WriteLine(mensch);
-            Console.WriteLine(mensch2);
+            ////Ausgabe der (überschriebenen) ToString()-Methoden
+            //Console.WriteLine(lebewesen);
+            //Console.WriteLine(mensch);
+            //Console.WriteLine(mensch2);
 
-            //Aufruf einer Property eines abhängigen Objekts
-            Console.WriteLine(mensch2.Mutter.Alter);
+            ////Aufruf einer Property eines abhängigen Objekts
+            //Console.WriteLine(mensch2.Mutter.Alter);
 
             #endregion
 
+            Lebewesen lebewesen;
+            Mensch mensch = new Mensch("Rainer", "Zufall", "Chips", new DateTime(1999, 5, 6), 189, true);
+
+            lebewesen = mensch;
+
+            Console.WriteLine(mensch.Vorname);
+            Console.WriteLine(lebewesen.Name);
+
+            ÄndereLieblingsnahrung(mensch, "Joghurt");
+
+            if (lebewesen is Mensch)
+            {
+                Mensch mensch2 = (Mensch)lebewesen;
+
+                mensch2 = lebewesen as Mensch;
+
+            }
+
+            Console.WriteLine(lebewesen.ToString());
+
+            lebewesen.Essen();
+        }
+
+        public static void ÄndereLieblingsnahrung(Lebewesen lebewesen, string neueNahrung)
+        {
+            lebewesen.Lieblingsnahrung = neueNahrung;
         }
     }
 }

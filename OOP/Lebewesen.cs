@@ -8,7 +8,7 @@ using System.Xml.Linq;
 namespace M06f_OOP
 {
     //KLASSEN sind Vorlagen für Objekte. Sie bestimmen Eigenschaften und Funktionen dieser.
-    public class Lebewesen //zur Verwendung vgl. Program.cs
+    public abstract class Lebewesen //zur Verwendung vgl. Program.cs
     {
         #region Felder und Eigenschaften
         //FELDER (Membervariablen) sind die Variablen einzelner Objekte, welche die Zustände dieser Objekte definieren
@@ -76,7 +76,8 @@ namespace M06f_OOP
         //Mittels VIRTUAL wird den erbenden Klassen das Überschreiben der Member mittels override erlaubt
         public virtual Lebewesen ProduziereNachwuchs(string kindname)
         {
-            return new Lebewesen(kindname, "Babynahrung", DateTime.Now, 30);
+            //return new Lebewesen(kindname, "Babynahrung", DateTime.Now, 30);
+            return null;
         }
 
         #endregion
@@ -115,5 +116,7 @@ namespace M06f_OOP
         {
             return $"{this.Name} ist {this.Alter} Jahre alt und mag gerne {this.Lieblingsnahrung}.";
         }
+
+        public abstract void Essen();
     }
 }

@@ -15,9 +15,10 @@ namespace M06f_OOP
 
         //Mensch-Konstruktor, welcher per BASE-Stichwort den Konstruktor der Personklasse aufruft. Dieser erstellt dann ein Lebewesen, gibt diese
         ///an diesen Konstruktor zurück, welcher dann die zusätzlichen Eigenschaften einfügt
-        public Mensch(string vorname, string nachname, string lieblingsnahrung, DateTime geburtsdatum, int größe) : base(nachname, lieblingsnahrung, geburtsdatum, größe)
+        public Mensch(string vorname, string nachname, string lieblingsnahrung, DateTime geburtsdatum, int größe, bool brille) : base(nachname, lieblingsnahrung, geburtsdatum, größe)
         {
             this.Vorname = vorname;
+            this.TrägtBrille = brille;
         }
 
         //Mittels OVERRIDE können Methoden der Mutterklassen, welche mit VIRTUAL markiert sind, überschrieben werden. Bei Aufruf wird die neue Methode ausgeführt.
@@ -34,7 +35,14 @@ namespace M06f_OOP
 
         public override Lebewesen ProduziereNachwuchs(string kindname)
         {
-            return new Mensch(kindname, this.Name, "Muttermilch", DateTime.Now, 30) { Mutter = this };
+            return new Mensch(kindname, this.Name, "Muttermilch", DateTime.Now, 30, false) { Mutter = this };
         }
+
+        public override void Essen()
+        {
+            Console.WriteLine($"{this.Vorname} genießt {this.Lieblingsnahrung}.");
+        }
+
+        public bool TrägtBrille { get; set; }
     }
 }
