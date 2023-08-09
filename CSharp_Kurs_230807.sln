@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M06f_OOP", "OOP\M06f_OOP.cs
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M07_WertVsReferenz", "WertVsReferenz\M07_WertVsReferenz.csproj", "{2BCE248E-B4BD-4B00-9B9C-1D9D3C878892}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerischeListen", "GenerischeListen\GenerischeListen.csproj", "{F77975D9-7EC2-4687-B9E8-F9B766CC0885}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{2BCE248E-B4BD-4B00-9B9C-1D9D3C878892}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BCE248E-B4BD-4B00-9B9C-1D9D3C878892}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BCE248E-B4BD-4B00-9B9C-1D9D3C878892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F77975D9-7EC2-4687-B9E8-F9B766CC0885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F77975D9-7EC2-4687-B9E8-F9B766CC0885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F77975D9-7EC2-4687-B9E8-F9B766CC0885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F77975D9-7EC2-4687-B9E8-F9B766CC0885}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
