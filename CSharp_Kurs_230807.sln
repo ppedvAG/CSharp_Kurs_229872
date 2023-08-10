@@ -25,19 +25,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M06f_OOP", "OOP\M06f_OOP.cs
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M07_WertVsReferenz", "WertVsReferenz\M07_WertVsReferenz.csproj", "{2BCE248E-B4BD-4B00-9B9C-1D9D3C878892}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M11_GenerischeListen", "GenerischeListen\M11_GenerischeListen.csproj", "{F77975D9-7EC2-4687-B9E8-F9B766CC0885}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M11_GenerischeListen", "GenerischeListen\M11_GenerischeListen.csproj", "{F77975D9-7EC2-4687-B9E8-F9B766CC0885}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M12_ExceptionHandling", "ExceptionHandling\M12_ExceptionHandling.csproj", "{C892FF0C-AF26-42F7-B7B8-0E8B8194A64F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M12_ExceptionHandling", "ExceptionHandling\M12_ExceptionHandling.csproj", "{C892FF0C-AF26-42F7-B7B8-0E8B8194A64F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M12_UnitTest", "UnitTest\M12_UnitTest.csproj", "{6BFBA9DD-90B6-4787-8419-55336E75720E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M12_UnitTest", "UnitTest\M12_UnitTest.csproj", "{6BFBA9DD-90B6-4787-8419-55336E75720E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab12_ExceptionHandling", "Lab12_ExceptionHandling\Lab12_ExceptionHandling.csproj", "{F1142549-A3FC-4DFA-853E-C1A874FFEA88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab12_ExceptionHandling", "Lab12_ExceptionHandling\Lab12_ExceptionHandling.csproj", "{F1142549-A3FC-4DFA-853E-C1A874FFEA88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M13_Delegates", "Delegates\M13_Delegates.csproj", "{70772F89-25A5-42B7-AF82-63F41990FD64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M13_Delegates", "Delegates\M13_Delegates.csproj", "{70772F89-25A5-42B7-AF82-63F41990FD64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M14_WinForms", "WinForms\M14_WinForms.csproj", "{B7ECDBCC-05C8-4A3A-94EF-DEC4755953A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M14_WinForms", "WinForms\M14_WinForms.csproj", "{B7ECDBCC-05C8-4A3A-94EF-DEC4755953A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab14f_FahrzeugGUI", "FahrzeugGUI\Lab14f_FahrzeugGUI.csproj", "{1DA76DB4-AF1F-4FD7-8AC2-45A099ADE279}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab14f_FahrzeugGUI", "FahrzeugGUI\Lab14f_FahrzeugGUI.csproj", "{1DA76DB4-AF1F-4FD7-8AC2-45A099ADE279}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M15_SpeichernUndLaden", "SpeichernUndLaden\M15_SpeichernUndLaden.csproj", "{65CC7E9A-3B25-4B93-A42C-7658FB39D4B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_Bsp", "WPF_Bsp\WPF_Bsp.csproj", "{84B6AAB9-E0E0-48B7-9C0B-983DC4707ADD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiBsp", "MauiApp1\MauiBsp.csproj", "{5F0E272C-2F3E-429C-9861-E53DA17AB26C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspBsp", "AspBsp\AspBsp.csproj", "{529CEE0E-B23A-41D3-ACA6-A43ECB99A346}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +125,24 @@ Global
 		{1DA76DB4-AF1F-4FD7-8AC2-45A099ADE279}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DA76DB4-AF1F-4FD7-8AC2-45A099ADE279}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DA76DB4-AF1F-4FD7-8AC2-45A099ADE279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65CC7E9A-3B25-4B93-A42C-7658FB39D4B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65CC7E9A-3B25-4B93-A42C-7658FB39D4B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65CC7E9A-3B25-4B93-A42C-7658FB39D4B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65CC7E9A-3B25-4B93-A42C-7658FB39D4B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84B6AAB9-E0E0-48B7-9C0B-983DC4707ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84B6AAB9-E0E0-48B7-9C0B-983DC4707ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84B6AAB9-E0E0-48B7-9C0B-983DC4707ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84B6AAB9-E0E0-48B7-9C0B-983DC4707ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F0E272C-2F3E-429C-9861-E53DA17AB26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F0E272C-2F3E-429C-9861-E53DA17AB26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F0E272C-2F3E-429C-9861-E53DA17AB26C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5F0E272C-2F3E-429C-9861-E53DA17AB26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F0E272C-2F3E-429C-9861-E53DA17AB26C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F0E272C-2F3E-429C-9861-E53DA17AB26C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{529CEE0E-B23A-41D3-ACA6-A43ECB99A346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{529CEE0E-B23A-41D3-ACA6-A43ECB99A346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{529CEE0E-B23A-41D3-ACA6-A43ECB99A346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{529CEE0E-B23A-41D3-ACA6-A43ECB99A346}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPF_Bsp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Bsp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="243" Width="402">
+    <StackPanel>
+
+        <Button Content="Klick Mich"
+                x:Name="Btn_KlickMich"
+                Margin="20"
+                Width="150"
+                HorizontalAlignment="Right"/>
+
+        <Label Content="HALLO" Background="Red"
+               HorizontalContentAlignment="Center"/>
+
+    </StackPanel>
+</Window>

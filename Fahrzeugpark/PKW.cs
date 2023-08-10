@@ -26,5 +26,27 @@ namespace Lab06f_Fahrzeugpark
         {
             Console.WriteLine($"{this.Name}: 'Hup Hup'");
         }
+
+        //Statische Methode zur Erstellung eines zufälligen PKWs 
+        public static PKW ErzeugeZufälligenPKW(string nameSuffix = "")
+        {
+            string name;
+            switch (generator.Next(1, 5))
+            {
+                case 1:
+                    name = "BMW" + nameSuffix;
+                    break;
+                case 2:
+                    name = "Mercedes" + nameSuffix;
+                    break;
+                case 3:
+                    name = "Audi" + nameSuffix;
+                    break;
+                default:
+                    name = "VW" + nameSuffix;
+                    break;
+            }
+            return new PKW(name, generator.Next(15, 31) * 10, generator.Next(15, 30) * 1000, generator.Next(1, 3) == 1 ? 3 : 5);
+        }
     }
 }
