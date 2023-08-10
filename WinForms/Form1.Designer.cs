@@ -46,6 +46,8 @@
             öffneDialogFensterToolStripMenuItem = new ToolStripMenuItem();
             schließenToolStripMenuItem = new ToolStripMenuItem();
             Btn_Ok = new Button();
+            Cbx_Enum = new ComboBox();
+            Tbx_Input = new TextBox();
             Gbx_Bla.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -186,7 +188,7 @@
             // 
             öffnenToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { öffneNeuesFensterToolStripMenuItem, öffneDialogFensterToolStripMenuItem });
             öffnenToolStripMenuItem.Name = "öffnenToolStripMenuItem";
-            öffnenToolStripMenuItem.Size = new Size(359, 44);
+            öffnenToolStripMenuItem.Size = new Size(250, 44);
             öffnenToolStripMenuItem.Text = "Öffnen";
             // 
             // öffneNeuesFensterToolStripMenuItem
@@ -206,12 +208,13 @@
             // schließenToolStripMenuItem
             // 
             schließenToolStripMenuItem.Name = "schließenToolStripMenuItem";
-            schließenToolStripMenuItem.Size = new Size(359, 44);
+            schließenToolStripMenuItem.Size = new Size(250, 44);
             schließenToolStripMenuItem.Text = "Schließen";
             schließenToolStripMenuItem.Click += schließenToolStripMenuItem_Click;
             // 
             // Btn_Ok
             // 
+            Btn_Ok.Enabled = false;
             Btn_Ok.Location = new Point(497, 561);
             Btn_Ok.Name = "Btn_Ok";
             Btn_Ok.Size = new Size(150, 46);
@@ -220,11 +223,28 @@
             Btn_Ok.UseVisualStyleBackColor = true;
             Btn_Ok.Click += Btn_Ok_Click;
             // 
+            // Cbx_Enum
+            // 
+            Cbx_Enum.FormattingEnabled = true;
+            Cbx_Enum.Location = new Point(65, 158);
+            Cbx_Enum.Name = "Cbx_Enum";
+            Cbx_Enum.Size = new Size(242, 40);
+            Cbx_Enum.TabIndex = 11;
+            // 
+            // Tbx_Input
+            // 
+            Tbx_Input.Location = new Point(410, 644);
+            Tbx_Input.Name = "Tbx_Input";
+            Tbx_Input.Size = new Size(200, 39);
+            Tbx_Input.TabIndex = 12;
+            // 
             // MeinFenster
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 718);
+            Controls.Add(Tbx_Input);
+            Controls.Add(Cbx_Enum);
             Controls.Add(Btn_Ok);
             Controls.Add(Lbx_Auswahl);
             Controls.Add(Cbb_Auswahl);
@@ -267,5 +287,7 @@
         private ToolStripMenuItem öffneDialogFensterToolStripMenuItem;
         private ToolStripMenuItem schließenToolStripMenuItem;
         private Button Btn_Ok;
+        private ComboBox Cbx_Enum;
+        private TextBox Tbx_Input;
     }
 }
